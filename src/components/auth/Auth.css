@@ -1,0 +1,76 @@
+.auth-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3em;
+}
+.auth-left-side,.auth-right-side{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Login Forms */
+
+.header {
+    font-size: 32px;
+    font-weight: 500;
+}
+.subHeader {
+    color: #9aa4ad;
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+.inputContainer{
+    width: 100%;
+}
+.label-name{
+    margin-left: 0.5em;
+    font-size: 18px;
+    color: #434349;
+}
+
+.input{
+    display: block;
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    border-radius: 12px;
+    border: 1px solid gray;
+    height: 40px;
+}
+.LoginButton {
+    margin-top: 30px;
+    display: block;
+    width: 104%;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #2e1f7a;
+    border: 0px;
+    outline: 0px;
+    cursor: pointer;
+}
+.LoginButton:hover {
+    background-color: #3d1be6;
+}
+.LoginButton:active {
+    background-color: #4520ff;
+}
+.form-footer{
+    margin-top: 15px;
+}
+
+
+/* Media Query */
+
+@media screen and (max-width: 850px) {
+    .auth-left-side {
+     display: none;
+    }
+    .auth-right-side{
+        width: 50%;
+        margin: auto;
+    }
+  }

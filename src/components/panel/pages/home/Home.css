@@ -1,0 +1,117 @@
+.category {
+  margin-top: 3em;
+  padding: 2em;
+}
+.category-row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+.img-cate {
+  border-radius: 50%;
+  width: 70%;
+}
+
+.dashboard-container {
+  display: flex;
+  justify-content: space-around;
+}
+/* --Media query for dashboard-- */
+@media screen and (max-width: 810px) {
+  .dashboard-container {
+   display: grid;
+   grid-template-columns: auto;
+   margin: auto;
+  }
+}
+
+@media screen and (max-width: 622px) {
+  .dashboard-title {
+   display: grid;
+   grid-template-columns: auto;
+   margin: auto;
+  }
+}
+
+/* --Tabs CSS-- */
+
+.tabs-conatiner{
+  width: 70%;
+  margin-top: 1em;
+}
+
+.custom-tabs-button {
+  background-color: #808080;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.custom-tabs-button:hover {
+  background-color: #636363;
+}
+
+.custom-tabs-button.active {
+  background-color: #1C49C2; /* Change this to the color you want for the active tab */
+}
+
+.custom-tabs-content {
+  display: none;
+}
+
+.custom-tabs-content.show {
+  display: block;
+}
+
+
+/* Table.css */
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td, table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #1C49C2;
+  color: white;
+}
+
+
+/* Add this media query for screens with a max-width of 600px */
+@media screen and (max-width: 600px) {
+  .table-container {
+    overflow-x: auto; /* Enable horizontal scrolling for the table */
+  }
+
+  table {
+    width: 100%; /* Ensure the table takes up the full width */
+  }
+
+  table td,
+  table th {
+    white-space: nowrap; /* Prevent text from wrapping */
+    min-width: 100px; /* Set a minimum width for cells */
+  }
+
+  table th {
+    text-align: center; /* Center-align table headers */
+  }
+}
